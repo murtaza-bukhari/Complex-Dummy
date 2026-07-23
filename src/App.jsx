@@ -4,6 +4,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { RotatingC } from "./components/RotatingC";
 import { Header } from "./components/Header";
 import { Contact } from "./pages/Contact.jsx"
+import { Facilities } from "./pages/Facilities.jsx";
 
 function App() {
   const [showRotatingC, setShowRotatingC] = useState(true);
@@ -25,6 +26,7 @@ function App() {
 
       <Routes>
         <Route path='contact' element={<Contact />}/>
+        <Route path='facilities' element={<Facilities />}/>
       </Routes>
     </BrowserRouter>
   );
