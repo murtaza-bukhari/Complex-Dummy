@@ -1,6 +1,6 @@
 .main-header {
   background: #232323;
-  height: 64px;
+  height: 70px;
   padding: 0 6%;
 
   display: flex;
@@ -12,48 +12,6 @@
   perspective: 1000px;
 }
 
-/*-----Animation-----*/
-.logo-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 40px; /* room for the ring */
-}
-
-.logo {
-  position: relative;
-  z-index: 2;
-}
-
-.logo-ring {
-  position: absolute;
-  left: 0;
-  top: 50%;
-
-  width: 30px;
-  height: 30px;
-
-  border: 3px solid #22c55e;
-  border-right-color: transparent;
-  border-radius: 50%;
-
-  opacity: 0.5;
-  z-index: 1;
-
-  transform: translateY(-50%);
-  animation: spin 5s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: translateY(-50%) rotateY(0deg);
-  }
-  to {
-    transform: translateY(-50%) rotateY(360deg);
-  }
-}
-
-/*-----LOGO-----*/
 
 .logo {
   position: relative;

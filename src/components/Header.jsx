@@ -6,10 +6,9 @@ export const Header = () => {
   return (
     <header className="main-header">
       
-      <div className="logo-container">
-        <div className="logo-ring"></div>
-        <h1 className="logo">Complex</h1>
-      </div>
+
+      <h1 className="logo">Complex</h1>
+
 
       <nav>
         <ul className="nav-links">
