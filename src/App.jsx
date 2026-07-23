@@ -1,8 +1,19 @@
+
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+
+import {Header} from './components/Header.jsx'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
+    <BrowserRouter>
+      
+      <Header />
+      
+      <Routes>
 
+      </Routes>
+      
+    </BrowserRouter>
   );
 }
 
