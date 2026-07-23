@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import "./component-styles/hero.css";
 
+import { useNavigate } from "react-router-dom";
+
 const images = [
   "/images/hero-image0.png",
   "/images/hero-image1.png",
@@ -10,6 +12,8 @@ const images = [
 
 export const Hero = () => {
   const [currentImage, setCurrentImage] = useState(0);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -41,8 +45,8 @@ export const Hero = () => {
           </p>
 
           <div className="hero-buttons">
-            <button>Book Now</button>
-            <button className="secondary">Explore Facilities</button>
+            <button onClick={() => navigate("/booking")}>Book Now</button>
+            <button className="secondary" onClick={() => navigate("/facilities")}>Explore Facilities</button>
           </div>
         </div>
 
