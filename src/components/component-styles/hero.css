@@ -1,0 +1,158 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.7));
+}
+
+.hero-content {
+  width: 80%;
+  max-width: 850px;
+  text-align: center;
+}
+
+.hero-subtitle {
+  color: #22c55e;
+  letter-spacing: 6px;
+  font-size: .9rem;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 5rem;
+  letter-spacing: 8px;
+  margin-bottom: 10px;
+}
+
+.hero-content h2 {
+  color: #e5e5e5;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  color: #c0c0c0;
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-buttons button {
+  padding: 14px 34px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.hero-buttons button:first-child {
+  background: #22c55e;
+  color: #111;
+}
+
+.hero-buttons button:first-child:hover {
+  background: #34d76c;
+  transform: translateY(-3px);
+}
+
+.secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white !important;
+}
+
+.secondary:hover {
+  background: white;
+  color: black;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.scroll-indicator span {
+  width: 2px;
+  height: 40px;
+  background: white;
+  animation: scroll 1.8s infinite;
+}
+
+.scroll-indicator p {
+  margin-top: 10px;
+  font-size: .8rem;
+  letter-spacing: 2px;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@media (max-width:768px) {
+  .hero-content {
+    width: 90%;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    letter-spacing: 4px;
+  }
+
+  .hero-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+}
