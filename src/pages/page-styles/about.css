@@ -175,3 +175,64 @@
   font-style: italic;
 
 }
+
+/* ===========================
+   Mobile
+=========================== */
+@media (max-width: 768px) {
+
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  .about-card {
+    width: 100%;
+    flex-direction: column;
+    gap: 35px;
+    padding: 30px 22px;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 320px;
+    border-width: 8px;
+    transform: rotate(-2deg);
+  }
+
+  .about-image span {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+
+  .about-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content h1 {
+    font-size: 2rem;
+  }
+
+  .about-content h1::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .about-content p {
+    margin-top: 22px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .signature {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+}

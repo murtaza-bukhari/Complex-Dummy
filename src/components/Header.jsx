@@ -1,18 +1,15 @@
-import './component-styles/header.css'
+import "./component-styles/header.css";
 
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   return (
     <header className="main-header">
-
-
       <h1 className="logo">Complex</h1>
-
 
       <nav>
         <ul className="nav-links">
-          <li>
+          <li className="hide">
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -22,7 +19,7 @@ export const Header = () => {
             </NavLink>
           </li>
 
-          <li>
+          <li className="hide">
             <NavLink
               to="/facilities"
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -59,7 +56,6 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
-
     </header>
   );
-}
+};

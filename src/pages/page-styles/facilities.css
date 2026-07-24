@@ -30,13 +30,13 @@
 
     overflow: hidden;
 
-    border: 1px solid rgba(255,255,255,.06);
+    border: 1px solid rgba(255, 255, 255, .06);
 
     transition: .35s ease;
 
     box-shadow:
-        0 18px 40px rgba(0,0,0,.35),
-        0 0 0 rgba(34,197,94,0);
+        0 18px 40px rgba(0, 0, 0, .35),
+        0 0 0 rgba(34, 197, 94, 0);
 }
 
 .facility-card:hover {
@@ -44,8 +44,8 @@
     transform: translateY(-8px);
 
     box-shadow:
-        0 22px 45px rgba(0,0,0,.45),
-        0 0 35px rgba(34,197,94,.15);
+        0 22px 45px rgba(0, 0, 0, .45),
+        0 0 35px rgba(34, 197, 94, .15);
 }
 
 .facility-card.reverse {
@@ -111,11 +111,9 @@
 
     border-radius: 10px;
 
-    background: linear-gradient(
-        to right,
-        #22c55e,
-        transparent
-    );
+    background: linear-gradient(to right,
+            #22c55e,
+            transparent);
 
     position: absolute;
 
@@ -164,4 +162,64 @@
     background: #32d56b;
 
     transform: translateY(-3px);
+}
+
+/* ===========================
+   Mobile
+=========================== */
+@media (max-width: 768px) {
+
+    .facilities-section {
+        padding: 60px 20px;
+    }
+
+    .facilities-section h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        margin-bottom: 40px;
+    }
+
+    .facility-container {
+        gap: 35px;
+    }
+
+    .facility-card,
+    .facility-card.reverse {
+        width: 100%;
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .facility-image {
+        width: 100%;
+        height: 240px;
+    }
+
+    .facility-details {
+        width: 100%;
+        padding: 30px 22px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .facility-details h2 {
+        font-size: 1.8rem;
+    }
+
+    .facility-details h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .facility-details p {
+        margin-top: 28px;
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .facility-details button {
+        margin-top: 28px;
+        width: 100%;
+        max-width: 250px;
+    }
 }
