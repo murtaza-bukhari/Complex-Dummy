@@ -4,38 +4,38 @@ import { useNavigate } from "react-router-dom";
 
 export const Facilities = () => {
 
-  const facilities = [
-    {
-      name: "Futsal",
-      image: "/images/image0.png",
-      description:
-        "Experience fast-paced futsal on a premium court designed for competitive matches and training."
-    },
-    {
-      name: "Cricket",
-      image: "/images/image1.png",
-      description:
-        "A high-quality cricket facility built for practice sessions, matches and cricket enthusiasts."
-    },
-    {
-      name: "Tennis",
-      image: "/images/image2.png",
-      description:
-        "Enjoy professional tennis courts suitable for casual games and serious training."
-    },
-    {
-      name: "Padel",
-      image: "/images/image3.png",
-      description:
-        "Try the fastest-growing racket sport with our modern padel courts."
-    },
-    {
-      name: "Jogging Track",
-      image: "/images/image4.png",
-      description:
-        "A dedicated track designed for running, fitness and outdoor endurance activities."
-    }
-  ];
+const facilities = [
+  {
+    name: "Futsal",
+    image: `${import.meta.env.BASE_URL}images/image0.png`,
+    description:
+      "Experience fast-paced futsal on a premium court designed for competitive matches and training."
+  },
+  {
+    name: "Cricket",
+    image: `${import.meta.env.BASE_URL}images/image1.png`,
+    description:
+      "A high-quality cricket facility built for practice sessions, matches and cricket enthusiasts."
+  },
+  {
+    name: "Tennis",
+    image: `${import.meta.env.BASE_URL}images/image2.png`,
+    description:
+      "Enjoy professional tennis courts suitable for casual games and serious training."
+  },
+  {
+    name: "Padel",
+    image: `${import.meta.env.BASE_URL}images/image3.png`,
+    description:
+      "Try the fastest-growing racket sport with our modern padel courts."
+  },
+  {
+    name: "Jogging Track",
+    image: `${import.meta.env.BASE_URL}images/image4.png`,
+    description:
+      "A dedicated track designed for running, fitness and outdoor endurance activities."
+  }
+];
 
   const navigate = useNavigate();
 

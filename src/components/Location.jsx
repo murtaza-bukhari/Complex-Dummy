@@ -23,11 +23,20 @@ export const Location = () => {
 
       <div className="location-gallery">
 
-        <img src="/images/field0.png" alt="Sports Complex View" />
+        <img
+          src={`${import.meta.env.BASE_URL}images/field0.png`}
+          alt="Sports Complex View"
+        />
 
-        <img src="/images/field1.png" alt="Sports Complex Entrance" />
+        <img
+          src={`${import.meta.env.BASE_URL}images/field1.png`}
+          alt="Sports Complex Entrance"
+        />
 
-        <img src="/images/field2.png" alt="Sports Complex Surroundings" />
+        <img
+          src={`${import.meta.env.BASE_URL}images/field2.png`}
+          alt="Sports Complex Surroundings"
+        />
 
       </div>
 

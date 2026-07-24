@@ -4,10 +4,10 @@ import "./component-styles/hero.css";
 import { useNavigate } from "react-router-dom";
 
 const images = [
-  "/images/hero-image0.png",
-  "/images/hero-image1.png",
-  "/images/hero-image2.png",
-  "/images/hero-image3.png",
+  `${import.meta.env.BASE_URL}images/hero-image0.png`,
+  `${import.meta.env.BASE_URL}images/hero-image1.png`,
+  `${import.meta.env.BASE_URL}images/hero-image2.png`,
+  `${import.meta.env.BASE_URL}images/hero-image3.png`,
 ];
 
 export const Hero = () => {
