@@ -5,7 +5,10 @@ import { NavLink } from "react-router-dom";
 export const Header = () => {
   return (
     <header className="main-header">
-      <h1 className="logo">Complex</h1>
+      <NavLink className="logo"
+      to="/"
+      >
+        Complex</NavLink>
 
       <nav>
         <ul className="nav-links">
