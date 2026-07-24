@@ -9,7 +9,7 @@ export const About = () => {
         <div className="about-image">
 
           <img
-            src="/images/first-sketch.png"
+            src={`${import.meta.env.BASE_URL}images/first-sketch.png`}
             alt="First sketch of the sports complex"
           />
 
